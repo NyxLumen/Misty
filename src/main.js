@@ -1,4 +1,5 @@
 import { getWeather } from "./weather.js";
+const BASE = import.meta.env.BASE_URL;
 
 const glass = document.querySelector(".glass");
 const btn = document.getElementById("searchBtn");
@@ -6,7 +7,7 @@ const input = document.getElementById("cityInput");
 const v1 = document.getElementById("video1");
 const v2 = document.getElementById("video2");
 
-v1.src = "/skies/clear.mp4";
+v1.src = `${BASE}skies/clear.mp4`;
 
 btn.onclick = load;
 input.addEventListener("keydown", (e) => {
@@ -46,7 +47,7 @@ async function load() {
 }
 
 function playSky(iconName) {
-	const newSrc = `/skies/${iconName}.mp4`;
+	const newSrc = `${BASE}skies/${iconName}.mp4`;
 	const currentVideo = v1.classList.contains("active") ? v1 : v2;
 	const nextVideo = v1.classList.contains("active") ? v2 : v1;
 
