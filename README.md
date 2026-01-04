@@ -5,11 +5,7 @@ Instead of just showing numbers, it changes the entire atmosphere around you.
 
 Built as part of my journey through **The Odin Project**, Misty explores how web apps can _feel_ not just function.
 
-<p align="center">
-  <video width="800" muted autoplay loop playsinline>
-    <source src="assets/demo.mp4" type="video/mp4">
-  </video>
-</p>
+https://github.com/user-attachments/assets/c1d3df2b-1791-4a29-b0f7-09eef8d1932f
 
 ## ✨ Features
 
