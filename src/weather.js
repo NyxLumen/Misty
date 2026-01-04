@@ -1,14 +1,5 @@
 const API_KEY = "ZB8XAHZZ8S9WZM92HR4VHJKQR";
 
-/*export async function getWeather(city) {
-	const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${encodeURIComponent(
-		city
-	)}?unitGroup=metric&key=${API_KEY}&contentType=json`;
-	const res = await fetch(url);
-	if (!res.ok) throw new Error("That place Doesn't exist, try on mars");
-	const data = await res.json();
-	return normalize(data);
-}*/
 export async function getWeather(city) {
 	const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${encodeURIComponent(
 		city
@@ -37,7 +28,7 @@ function normalize(data) {
 		wind: now.windspeed,
 		uv: now.uvindex,
 		condition: now.conditions,
-		icon: now.icon,
+		icon: normalizeIcon(now.icon),
 		sunrise: today.sunrise,
 		sunset: today.sunset,
 		hourly: today.hours.slice(0, 12).map((h) => ({
@@ -46,4 +37,13 @@ function normalize(data) {
 			icon: h.icon,
 		})),
 	};
+}
+
+function normalizeIcon(icon) {
+	if (icon.includes("rain")) return "rain";
+	if (icon.includes("snow")) return "snow";
+	if (icon.includes("fog")) return "fog";
+	if (icon.includes("cloud")) return "cloudy";
+	if (icon.includes("clear")) return "clear";
+	return "clear";
 }
