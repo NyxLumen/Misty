@@ -6,7 +6,7 @@ Instead of just showing numbers, it changes the entire atmosphere around you.
 Built as part of my journey through **The Odin Project**, Misty explores how web apps can _feel_ not just function.
 
 <p align="center">
-  <img src="image.png" alt="Misty Preview" width="800">
+  <img src="image.png" alt="Misty Preview">
 </p>
 
 ## ✨ Features
