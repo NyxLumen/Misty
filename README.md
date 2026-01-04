@@ -1,4 +1,4 @@
-# 🌫️ Misty
+# Misty
 
 **Misty is a calm, animated weather interface that reacts to real-time sky conditions.**  
 Instead of just showing numbers, it changes the entire atmosphere around you.
@@ -6,7 +6,7 @@ Instead of just showing numbers, it changes the entire atmosphere around you.
 Built as part of my journey through **The Odin Project**, Misty explores how web apps can _feel_ not just function.
 
 <p align="center">
-  <img src="image.png" alt="Misty Preview">
+  <video src="demo.mp4" alt="Misty Preview" autoplay loop muted playsinline>
 </p>
 
 ## ✨ Features
