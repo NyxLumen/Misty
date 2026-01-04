@@ -6,7 +6,8 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
@@ -21,5 +22,8 @@
 	"homepage": "https://github.com/NyxLumen/Misty#readme",
 	"dependencies": {
 		"vite": "^7.3.0"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.3.0"
 	}
 }
